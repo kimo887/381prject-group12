@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/crudstyle.css">
+  <title>Library Management System</title>
+</head>
+
+
+
+<body>
+  <h1>Library Management System</h1>
+  <div class="crud-container">
+    <!-- Create borrowing record -->
+    <div class="crud-box">
+      <h2>Create New Borrow Record</h2>
+      <form action="/create" method="POST">
+        <input type="text" name="bookId" placeholder="Enter Book ID" required>
+        <input type="text" name="bookTitle" placeholder="Enter Book Title" required>
+        <button type="submit">Create Borrow Record</button>
+      </form>
+      <!-- insert image here -->
+      <img src="/leftbook.png" alt="Book Image 1" class="crud-image">
+    </div>
+
+    <!-- find borrowing record  -->
+    <div class="crud-box">
+      <h2>Search for Book Information</h2>
+      <form action="/read" method="GET">
+        <input type="text" name="bookId" placeholder="Enter Book ID to Search" required>
+        <button type="submit">Search by Book ID</button>
+      </form>
+    </div>
+
+    <!-- for update due date -->
+    <div class="crud-box">
+      <h2>Update Borrow Return Date</h2>
+      <form action="/update" method="POST">
+        <input type="text" name="bookId" placeholder="Enter Book ID" required>
+        <input type="date" name="newReturnDate" placeholder="Enter New Return Date" required>
+        <button type="submit">Update Return Date</button>
+      </form>
+      <!-- insert image here -->
+      <img src="/rightbook.png" alt="Book Image 2" class="crud-image">
+    </div>
+
+    <!-- delete record for return book -->
+    <div class="crud-box">
+      <h2>Delete Borrow Record</h2>
+      <form action="/delete" method="POST">
+        <input type="text" name="bookId" placeholder="Enter Book ID to Complete Borrow" required>
+        <button type="submit">Complete and Delete Borrow Record</button>
+      </form>
+    </div>
+  </div>
+
+  <a href="/logout">Logout</a>
+</body>
+</html>

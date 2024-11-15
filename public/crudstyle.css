@@ -1,0 +1,68 @@
+/* used in crud.ejs */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 主标题样式 */
+h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* CRUD 容器样式 */
+.crud-container {
+  display: flex;
+  flex-wrap: wrap; /* 允许内容换行 */
+  justify-content: center;
+  gap: 20px; /* 方框之间的间距 */
+}
+
+/* Use four boxes to separate each function */
+.crud-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* 每个方框的宽度 */
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+/* button and input have same length to ensure beauty*/
+input, button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* image sytle and keep them parallel */
+.crud-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}

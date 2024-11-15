@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/registerstyle.css">
+  <title>Register</title>
+</head>
+
+
+<body>
+  <div class="login-container">
+    <h2>HKMU<br>Library Management System Register</h2>
+    <form action="/register" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <!-- use referee to ensure registration is not abused, only for librarian-->
+      <label for="referee">Referee:</label>
+      <input type="text" id="referee" name="referee" placeholder="Enter referee in your interview" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account?<br><br>Click the button to login!</p>
+    <a href="/login">
+      <img src="/login.png" alt="Login" style="width: 100px; height: auto;" class="register-png">
+    </a>
+  </div>
+</body>
+</html>
